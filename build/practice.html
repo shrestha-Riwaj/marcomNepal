@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body>
+
+   <!-- below header -->
+   <section class=" bg-blue-400 flex items-center justify-center space-x-24">
+    <!-- Texts -->
+    <div class="flex items-center justify-center space-x-2">
+        <h2 class="font-bold text-lg">CMO Dialogues</h2>
+            <h2 class="font-bold text-lg">.</h2>
+        
+        <h2 class="font-bold text-lg">Brands</h2>
+    </div>
+
+    <div>
+        <h3 class=" font-light text-blue-600">Sign up for markom! Newsletters</h3>
+    </div>
+   </section>
+    <!-- side article section -->
+    <div class="w-96 h-96 bg-purple-900 mx-3 my-2">
+        <!-- logo -->
+        <div class=" text-left w-16 h-16">
+            <img src="./images/logoo.png" alt="">
+        </div>
+        <!-- text -->
+        <div class="flex flex-col items-center font-bold text-lg">
+            <h1>From</h1>
+            <h1>Ideation</h1>
+            <h1>To</h1>
+            <h1>Execution</h1>
+            <p>Our campaign conceptualization is fire</p>
+        </div>
+        <div class="flex m-2">
+            <div class="flex flex-col text-base">
+                <h3>Audio & Video Production</h3>
+                <h3>Social Media & Digital Marketing</h3>
+            </div>
+            <!-- <div >
+                <h3 class=" h-full">|</h3>
+            </div> -->
+            <div class=" flex flex-col text-base">
+                <h3>Branding Solutions</h3>
+                <h3>Communication Stategies</h3>
+            </div>
+        </div>
+        <div class=" ">
+            <h1 class="font-bold text-xl text-center">Connect Now</h1>
+        </div>
+        <hr class=" border-1 border-black m-1">
+        <div class="flex space-x-2">
+            <i class=""></i>
+            <p class="text-lg">+91-8510836683</p>
+            <i></i>
+            <p class="text-lg">tvh@thevisualhouse.in</p>
+        </div>
+    </div>
+
+    <div class="relative">
+        <div class="flex overflow-hidden">
+            <!-- The container holding all the items -->
+            <div class="flex flex-nowrap transition-transform duration-500" id="carousel">
+                <div class="item w-1/3">Item 1</div>
+                <div class="item w-1/3">Item 2</div>
+                <div class="item w-1/3">Item 3</div>
+                <div class="item w-1/3">Item 4</div>
+                <!-- Add more items as needed -->
+            </div>
+        </div>
+    
+        <!-- Left arrow -->
+        <button class="absolute left-0" onclick="slide(-1)">
+            <i class="ri-arrow-left-s-line"></i>
+        </button>
+    
+        <!-- Right arrow -->
+        <button class="absolute right-0" onclick="slide(1)">
+            <i class="ri-arrow-right-s-line"></i>
+        </button>
+    </div>
+    
+
+    <!-- <script>
+        let currentSlide = 0;
+
+function slide(direction) {
+    const carousel = document.getElementById('carousel');
+    const totalItems = document.querySelectorAll('.item').length;
+    const itemsToShow = 3; // Number of items to show at a time
+
+    currentSlide += direction;
+
+    // Prevent sliding beyond the first and last item
+    if (currentSlide < 0) {
+        currentSlide = 0;
+    } else if (currentSlide > totalItems - itemsToShow) {
+        currentSlide = totalItems - itemsToShow;
+    }
+
+    const offset = currentSlide * -100 / itemsToShow;
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+
+    </script> -->
+
+    <!-- Content for scrolling -->
+    <div class="h-screen bg-gray-100 flex items-center justify-center">
+        <h1 class="text-4xl font-bold">Scroll Down to See the Go to Top Button</h1>
+    </div>
+    <div class="h-screen bg-blue-200"></div>
+    <div class="h-screen bg-gray-300"></div>
+
+    <!-- Go to Top Button -->
+    <button id="goTopBtn" class="hidden fixed bottom-5 right-5 bg-blue-700 text-white rounded-full p-3 shadow-lg hover:bg-blue-800 focus:outline-none">
+        <i class="ri-arrow-up-s-line text-2xl"></i>
+    </button>
+
+    <script>
+        // Show the button when scrolling down
+        const goTopBtn = document.getElementById('goTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                goTopBtn.classList.remove('hidden');
+            } else {
+                goTopBtn.classList.add('hidden');
+            }
+        };
+
+        // Smooth scroll to top
+        goTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>

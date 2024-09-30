@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-blue-900">
+        <nav>
+            <ul class="flex space-x-10 mx-4 text-white p-2 text-lg items-center justify-center">
+                <li><a href="">Home</a></li>
+                <li class="relative ">
+                    <a class="" href="" onclick="toggleSubMenu(event, 'articleSubMenu')">Articles
+                        <i class="ri-arrow-drop-down-fill font-bold"></i>
+                    </a>
+                    <ul id="articleSubMenu" class="hidden absolute left-0 bg-blue-800  rounded text-white p-2">
+                        <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Interviews</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Point of Views</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Guest Articles</a></li>
+                    </ul>
+                </li>
+                <li><a href="">News</a></li>
+                <li><a href="">Media</a></li>
+                <li class="relative">
+                    <a href="#" onclick="toggleSubMenu(event, 'eventsSubMenu')">Events
+                        <i class="ri-arrow-drop-down-fill font-bold"></i>
+                    </a>
+                    <ul id="eventsSubMenu" class="hidden absolute left-0 bg-blue-800 rounded text-white p-2">
+                        <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Dashboard</a></li>
+                        <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Roundtable</a></li>
+                        <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Webinar</a></li>
+                    </ul>
+                </li>
+                <i class="ri-search-line text-2xl font-bold"></i>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Brands -->
+    <section class="mx-10 my-10  flex flex-col space-y-3">
+        <div>
+            <hr class=" border-2 border-blue-900">
+            <h1 class=" font-semibold text-lg ml-2">Brands</h1>
+        </div>
+        <div class=" grid grid-cols-3 gap-4">
+            <div class=" col-span-2">
+                <div class=" grid grid-cols-2 gap-2">
+                    <div class="bg-red-300 rounded-md pb-4 flex flex-col space-y-2">
+                        <div class=" rounded-md">
+                            <img class="rounded-md" src="./images/laptop3.jpg" alt="">
+                        </div>
+                        <div class="flex items-center space-x-40 mx-3">
+                            <p class="text-lg font-light text-gray-500">By afaqs! news bureau</p>
+                            <p class="border-2 rounded-md text-gray-600">Brands</p>
+                        </div>
+                        <div class="mx-3 flex flex-col items-start">
+                            <h1 class="font-semibold text-lg">DOMS acquire 51.77% stake in Uniclan Healthcare</h1>
+                            <p class=" text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, excepturi?
+    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-red-300 rounded-md pb-4 flex flex-col space-y-2">
+                        <div class=" rounded-md">
+                            <img class="rounded-md" src="./images/laptop3.jpg" alt="">
+                        </div>
+                        <div class="flex items-center space-x-40 mx-3">
+                            <p class="text-lg font-light text-gray-500">By afaqs! news bureau</p>
+                            <p class="border-2 rounded-md text-gray-600">Brands</p>
+                        </div>
+                        <div class="mx-3 flex flex-col items-start">
+                            <h1 class="font-semibold text-lg">DOMS acquire 51.77% stake in Uniclan Healthcare</h1>
+                            <p class=" text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, excepturi?
+    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-red-300 rounded-md pb-4 flex flex-col space-y-2">
+                        <div class=" rounded-md">
+                            <img class="rounded-md" src="./images/laptop3.jpg" alt="">
+                        </div>
+                        <div class="flex items-center space-x-40 mx-3">
+                            <p class="text-lg font-light text-gray-500">By afaqs! news bureau</p>
+                            <p class="border-2 rounded-md text-gray-600">Brands</p>
+                        </div>
+                        <div class="mx-3 flex flex-col items-start">
+                            <h1 class="font-semibold text-lg">DOMS acquire 51.77% stake in Uniclan Healthcare</h1>
+                            <p class=" text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, excepturi?
+    
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-red-300 rounded-md pb-4 flex flex-col space-y-2">
+                        <div class=" rounded-md">
+                            <img class="rounded-md" src="./images/laptop3.jpg" alt="">
+                        </div>
+                        <div class="flex items-center space-x-40 mx-3">
+                            <p class="text-lg font-light text-gray-500">By afaqs! news bureau</p>
+                            <p class="border-2 rounded-md text-gray-600">Brands</p>
+                        </div>
+                        <div class="mx-3 flex flex-col items-start">
+                            <h1 class="font-semibold text-lg">DOMS acquire 51.77% stake in Uniclan Healthcare</h1>
+                            <p class=" text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, excepturi?
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" col-span-full text-center mt-5">
+                        <button class=" border-2 p-2 m-1 rounded-md text-red-700 border-red-700 text-lg font-semibold">Load More</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex flex-col gap-4">
+                <div class="bg-gray-500 px-2">
+                    <div class="flex items-end justify-end">
+                        <img class="w-16 h-16" src="./images/logoo.png" alt="">
+                    </div>
+                    <div class="flex flex-col font-bold text-xl items-start ml-10">
+                        <h1>Beyond</h1>
+                        <h1>The Brief</h1>
+                    </div>
+                    <div class="flex">
+                        <p class="text-centlefter">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit officiis delectus laudantium adipisci esse soluta dolores eius dolorem iure! Consectetur, aliquid porro doloremque error cum reiciendis ipsum commodi voluptatum ipsa?</p>
+                        <img class="w-32 h-28" src="./images/desktop.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       
+    </section>
+    <script>
+        function toggleSubMenu(event, subMenuId) {
+            event.preventDefault();
+            let subMenu = document.getElementById(subMenuId);
+            subMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

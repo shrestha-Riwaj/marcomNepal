@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-blue-900">
+        <nav>
+            <ul class="flex space-x-10 mx-4 text-white p-2 text-lg items-center justify-center">
+                <li><a href="">Home</a></li>
+                <li class="relative ">
+                    <a class="" href="" onclick="toggleSubMenu(event, 'articleSubMenu')">Articles
+                        <i class="ri-arrow-drop-down-fill font-bold"></i>
+                    </a>
+                    <ul id="articleSubMenu" class="hidden absolute left-0 bg-blue-800  rounded text-white p-2">
+                        <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Interviews</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Point of Views</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Guest Articles</a></li>
+                    </ul>
+                </li>
+                <li><a href="">News</a></li>
+                <li><a href="">Media</a></li>
+                <li class="relative">
+                    <a href="#" onclick="toggleSubMenu(event, 'eventsSubMenu')">Events
+                        <i class="ri-arrow-drop-down-fill font-bold"></i>
+                    </a>
+                    <ul id="eventsSubMenu" class="hidden absolute left-0 bg-blue-800 rounded text-white p-2">
+                        <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Dashboard</a></li>
+                        <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Roundtable</a></li>
+                        <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Webinar</a></li>
+                    </ul>
+                </li>
+                <i class="ri-search-line text-2xl font-bold"></i>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleSubMenu(event, subMenuId) {
+            event.preventDefault();
+            let subMenu = document.getElementById(subMenuId);
+            subMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

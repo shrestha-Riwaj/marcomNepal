@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+</head>
+<body >
+    <div class="grid grid-cols-5">
+        <div class=" col-span-1">
+
+        </div>
+    
+        <!-- mid section -->
+        <section class=" col-span-3">
+            <!-- Header Section -->
+        <header class="bg-blue-900">
+            <nav>
+                <ul class="flex space-x-10 mx-4 text-white p-2 text-lg items-center justify-between">
+                    <li><a href="">Home</a></li>
+                    <li class="relative ">
+                        <a class="" href="" onclick="toggleSubMenu(event, 'newsSubMenu')">News
+                            <i class="ri-arrow-drop-down-fill font-bold"></i>
+                        </a>
+                        <ul id="newsSubMenu" class="hidden absolute left-0 bg-blue-800  rounded text-white p-2">
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Advertising</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Marketing</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Brands and Contents</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Brand</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">People Spotting</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">MarTech</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Comms and PR</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Gaming</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative ">
+                        <a class="" href="" onclick="toggleSubMenu(event, 'articleSubMenu')">Articles
+                            <i class="ri-arrow-drop-down-fill font-bold"></i>
+                        </a>
+                        <ul id="articleSubMenu" class="hidden absolute left-0 bg-blue-800  rounded text-white p-2">
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Interviews</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Point of Views</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Profile</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">afaqs!Pause</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Guest Articles</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Marketing Initiatives</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative ">
+                        <a class="" href="" onclick="toggleSubMenu(event, 'mediaSubMenu')">Media
+                            <i class="ri-arrow-drop-down-fill font-bold"></i>
+                        </a>
+                        <ul id="mediaSubMenu" class="hidden absolute left-0 bg-blue-800  rounded text-white p-2">
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Television</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Digital</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">OTT Streaming</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Social Media</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Print</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">OOH</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Radio</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Cinema</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Media</a></li>
+                    <li class="relative">
+                        <a href="#" onclick="toggleSubMenu(event, 'eventsSubMenu')">Events
+                            <i class="ri-arrow-drop-down-fill font-bold"></i>
+                        </a>
+                        <ul id="eventsSubMenu" class="hidden absolute left-0 bg-blue-800 rounded text-white p-2">
+                            <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Dashboard</a></li>
+                            <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Roundtable</a></li>
+                            <li><a class="block px-3 py-2 hover:bg-blue-700" href="">Webinar</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative ">
+                        <a class="" href="" onclick="toggleSubMenu(event, 'moreSubMenu')">More
+                            <i class="ri-arrow-drop-down-fill font-bold"></i>
+                        </a>
+                        <ul id="moreSubMenu" class="hidden absolute left-0 bg-blue-800  rounded text-white p-2">
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Subscribe</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Creative Showcase</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Careers</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-blue-700" href="">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <i class="ri-search-line text-2xl font-bold"></i>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Full Article -->
+
+        <section>
+            <div class="flex flex-col mt-2 gap-10">
+                <div class=" bg-gray-300 rounded-md">
+                    <div>
+                        <img class="rounded-md" src="./images/gaming.jpg" alt="">
+                    </div>
+                    <div class=" flex items-center justify-between gap-5 mx-3 mb-2">
+                        <div class="flex gap-2">
+                            <h2 class="text-lg font-light text-gray-500">By afaqs! news bureau</h2>
+                            <h2 class="text-lg font-light text-gray-500">|</h2>
+                            <h2 class="text-lg font-light text-gray-500">Published: 27 Feb 2024</h2>
+                        </div>
+                        <h2 class=" text-lg border-2 border-gray-400 mt-1 rounded-md bg-gray font-light text-gray-400">Media</h2>
+                    </div>
+                    <h2 class="font-semibold text-xl mx-3">
+                        News18 India launches Morning Prime show with Pankaj Bhargav
+                    </h2>
+                    <div class=" flex gap-7 mx-3">
+                        <p>Share Via: </p>
+
+                    </div>
+                    <div class="mx-3">
+                        <p class=" text-xl text-gray-500">
+                            This show is designed to offer viewers a comprehensive and engaging morning news bulletin.
+                        </p>
+                    </div>
+                    <div class="mx-3 my-3">
+                        <p class=" text-lg">
+                            News18 India has announced the launch of its latest show, 'News18 India Morning Prime'. Presented by anchor Pankaj Bhargav, the show is scheduled to premiere on February 28 and will air on weekdays from 8 AM to 10:30 p.m.
+                            It aims to offer viewers a blend of breaking news coverage,
+                            on-ground reporting, analysis, and discussions.
+                             With Pankaj Bhargav leading the show, viewers can expect a stimulating
+                              start to their day, packed with the latest news stories, backed by expert
+                               insights on the day's most pressing issues including a segment titled 
+                               'Kamaal ki Baat', where the intriguing aspects of the day's news will be
+                                highlighted, exclusive interviews with key newsmakers and a touch of 
+                                entertainment in equal measure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=" bg-gray-300 rounded-md">
+                    <div>
+                        <img class="rounded-md" src="./images/gaming.jpg" alt="">
+                    </div>
+                    <div class=" flex items-center justify-between gap-5 mx-3 mb-2">
+                        <div class="flex gap-2">
+                            <h2 class="text-lg font-light text-gray-500">By afaqs! news bureau</h2>
+                            <h2 class="text-lg font-light text-gray-500">|</h2>
+                            <h2 class="text-lg font-light text-gray-500">Published: 27 Feb 2024</h2>
+                        </div>
+                        <h2 class=" text-lg border-2 border-gray-400 mt-1 rounded-md bg-gray font-light text-gray-400">Media</h2>
+                    </div>
+                    <h2 class="font-semibold text-xl mx-3">
+                        News18 India launches Morning Prime show with Pankaj Bhargav
+                    </h2>
+                    <div class=" flex gap-7 mx-3">
+                        <p>Share Via: </p>
+
+                    </div>
+                    <div class="mx-3">
+                        <p class=" text-xl text-gray-500">
+                            This show is designed to offer viewers a comprehensive and engaging morning news bulletin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        
+
+    <!-- Go to Top Button -->
+    <button id="goTopBtn" class="hidden fixed bottom-5 right-5 bg-blue-700
+     text-white rounded-lg p-3 shadow-lg hover:bg-blue-800 focus:outline-none">
+        <i class="ri-arrow-up-s-line text-2xl"></i>
+    </button>
+        </section>
+        
+        <div class=" col-span-1">
+            
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    
+    <footer class=" bg-blue-900 m-2">
+        <!-- First Part -->
+        <div class="flex justify-between items-center w-5/6 p-8 bg-blue-900 text-white space-x-4">
+            <!-- Newsletter Section -->
+            <div class="flex flex-col items-center space-x-4 bg-blue-800 rounded-lg p-4">
+                <p class="font-semibold text-lg">Stay updated with <span class="text-yellow-400">markom!</span> newsletter</p>
+                <div class="relative">
+                    <input class="border border-white p-2 rounded-lg text-gray-800" type="email" placeholder="Email Address">
+                    <button class="absolute right-0 top-0 bg-yellow-400 px-4 py-2 text-white font-semibold rounded-lg hover:bg-yellow-500">→</button>
+                </div>
+            </div>
+        
+            <!-- Social and Copyright Section -->
+            <div class="flex flex-col text-right">
+                <!-- Social Media Links -->
+                <div class="flex items-center space-x-4 mb-4">
+                    <p class="text-lg">Follow us on:</p>
+                    <ul class="flex items-center space-x-4">
+                        <li>
+                            <a class="hover:text-blue-400 transition duration-200" href="#"><i class="ri-facebook-circle-fill text-xl"></i></a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blue-400 transition duration-200" href="#"><i class="ri-instagram-line text-xl"></i></a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blue-400 transition duration-200" href="#"><i class="ri-twitter-x-line text-xl"></i></a>
+                        </li>
+                        <li>
+                            <a class="hover:text-blue-400 transition duration-200" href="#"><i class="ri-youtube-fill text-xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Copyright Text -->
+                <p class="text-sm text-justify">
+                    Copyright © 2024 markom!. All pages of the Website are subject to our terms and conditions 
+                    and privacy policy. You must not reproduce, duplicate, copy, sell, or exploit any material 
+                    on the Website for any commercial purposes.
+                </p>
+            </div>
+        </div>
+        
+        <hr class="border-1 border-black m-1">
+        <!-- Second Part -->
+        <section class=" grid grid-cols-6 text-white mx-3 my-2">
+            <!-- Home -->
+            <div class=" space-y-2">
+                <h1 class=" font-semibold text-lg"><a href="">Home</a></h1>
+                <h3 class=" text-base"><a href="">Service Agreement</a></h3>
+            </div>
+            <!-- News -->
+            <div class="space-y-2">
+                <h1 class=" font-semibold text-lg"><a href="">News</a></h1>
+                <h3 class=" text-base"><a href="">Advertising</a></h3>
+                <h3 class=" text-base"><a href="">Marketing</a></h3>
+                <h3 class=" text-base"><a href="">Brands and Content</a></h3>
+                <h3 class=" text-base"><a href="">Brands</a></h3>
+                <h3 class=" text-base"><a href="">People Spotting</a></h3>
+                <h3 class=" text-base"><a href="">MarTech</a></h3>
+                <h3 class=" text-base"><a href="">Comms and PR</a></h3>
+                <h3 class=" text-base"><a href="">Gaming</a></h3>
+                <h3 class=" text-base"><a href="">Companies</a></h3>
+            </div>
+            <!-- Articles -->
+            <div class="space-y-2">
+                <h1 class=" font-semibold text-lg"><a href="">Articles</a></h1>
+                <h3 class=" text-base"><a href="">Interviews</a></h3>
+                <h3 class=" text-base"><a href="">Points of View</a></h3>
+                <h3 class=" text-base"><a href="">markom! Pause</a></h3>
+                <h3 class=" text-base"><a href="">Profile</a></h3>
+                <h3 class=" text-base"><a href="">PlainSpeak with Sreekant</a></h3>
+                <h3 class=" text-base"><a href="">Guest Articles</a></h3>
+                <h3 class=" text-base"><a href="">Marketing initiative</a></h3>
+            </div>
+            <!-- Media -->
+            <div class="space-y-2">
+                <h1 class=" font-semibold text-lg"><a href="">Media</a></h1>
+                <h3 class=" text-base"><a href="">Television</a></h3>
+                <h3 class=" text-base"><a href="">Digital</a></h3>
+                <h3 class=" text-base"><a href="">OTT Streaming</a></h3>
+                <h3 class=" text-base"><a href="">Social Media</a></h3>
+                <h3 class=" text-base"><a href="">Print</a></h3>
+                <h3 class=" text-base"><a href="">OOH</a></h3>
+                <h3 class=" text-base"><a href="">Radio</a></h3>
+            </div>
+            <!-- Events -->
+            <div class="space-y-2">
+                <h1 class=" font-semibold text-lg"><a href="">Events</a></h1>
+                <h3 class=" text-base"><a href="">Dashboard</a></h3>
+                <h3 class=" text-base"><a href="">Roundtable</a></h3>
+                <h3 class=" text-base"><a href="">Webinar</a></h3>
+            </div>
+            <!-- More -->
+            <div class="space-y-2">
+                <h1 class=" font-semibold text-lg"><a href="">More</a></h1>
+                <h3 class=" text-base"><a href="">Subscribe</a></h3>
+                <h3 class=" text-base"><a href="">Creative Showcase</a></h3>
+                <h3 class=" text-base"><a href="">Careers</a></h3>
+                <h3 class=" text-base"><a href="">Contact us</a></h3>
+            </div>
+        </section>
+    </footer>
+    
+    <script>
+        function toggleSubMenu(event, subMenuId) {
+            event.preventDefault();
+            let subMenu = document.getElementById(subMenuId);
+            subMenu.classList.toggle('hidden');
+        }
+        // Show the button when scrolling down
+        const goTopBtn = document.getElementById('goTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                goTopBtn.classList.remove('hidden');
+            } else {
+                goTopBtn.classList.add('hidden');
+            }
+        };
+
+        // Smooth scroll to top
+        goTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+    <script src="./articles.js"></script>
+</body>
+</html>
